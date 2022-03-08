@@ -1,0 +1,36 @@
+/*
+Button
+================================
+*/
+
+@import 'core/variables';
+
+.btn {
+	display: block;
+	margin: 0 auto;
+	width: 20%;
+	color: white;
+	font-weight: 900;
+	background: $color-btn;
+	padding: .50rem;
+	border:0;
+	border-radius: 30px;
+	cursor: pointer;
+	margin-top: 3.2rem;
+
+	&:hover {
+		background: white;
+		color: $color-btn;
+		border: 1px solid $color-btn;
+	}
+}
+
+@media only screen and (min-width: 20rem) and (max-width: 40rem) {
+
+	.btn {
+		font-size: 0.8rem;
+		width: 100%;
+		pointer-events: none;
+	}
+
+	}

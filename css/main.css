@@ -1,0 +1,340 @@
+/*
+Seting basic document typography
+================================
+
+Main Font pro headings apod Kumbh Sans
+*/
+/*
+Variables
+================================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap");
+h1 {
+  font-weight: 700; }
+
+h2, h3, h4, h5 {
+  font-weight: 600; }
+
+a {
+  text-decoration: none; }
+
+p {
+  color: #454545; }
+
+body,
+input,
+select,
+textarea,
+button {
+  font-family: 'Kumbh Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*
+Layou related
+================================
+
+	header
+		.navbar
+			.logo
+			.nav
+	main
+		cover
+		.container
+			.content
+			.pre-footer
+	footer
+==============================
+*/
+/*
+Variables
+================================
+*/
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+  background: white;
+  margin-top: 18rem; }
+
+.content {
+  padding-top: 3.5rem; }
+
+.row {
+  display: flex;
+  justify-content: center; }
+
+.top-star {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 0 3rem 0; }
+
+.border {
+  max-width: 54rem;
+  margin: 0 auto;
+  height: 1px;
+  border-bottom: 1px solid #B7B7B7;
+  width: 80%; }
+
+.blog__row {
+  padding-top: 3rem; }
+
+.box {
+  width: 25%;
+  margin-left: 0.5rem; }
+  .box span {
+    font-size: .5rem;
+    color: #454545; }
+  .box p {
+    font-size: 0.8rem; }
+
+.pre-footer {
+  padding: 10rem 0 3rem 0; }
+  .pre-footer a {
+    cursor: pointer; }
+
+.pre-footer::after {
+  position: absolute;
+  left: 0;
+  content: " ";
+  display: block;
+  height: 40px;
+  border-bottom: 1px solid #B7B7B7;
+  width: 100%; }
+
+.fa-star {
+  color: red;
+  background: #EFEFEF;
+  padding: 1rem;
+  border: 1px solid #EFEFEF;
+  border-radius: 50%;
+  margin-bottom: 1rem; }
+
+body {
+  padding: 0; }
+
+html {
+  font-size: 1.125em;
+  line-height: 1.5; }
+
+@media only screen and (min-width: 20rem) and (max-width: 40rem) {
+  html {
+    line-height: 1.45;
+    font-size: 1rem; }
+
+  .top-star {
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 1rem;
+    flex-direction: column; }
+    .top-star .box {
+      width: 100%;
+      padding: 1rem; }
+
+  .blog__row {
+    flex-direction: column; }
+    .blog__row .box {
+      text-align: center;
+      width: 100%;
+      padding-bottom: 2rem; }
+
+  .row__bottom-link {
+    flex-direction: column;
+    align-items: center; }
+
+  .container {
+    margin-top: 12rem; } }
+@media only screen and (max-width: 19.9rem) {
+  html {
+    line-height: 1.4;
+    font-size: 1rem; } }
+@media only screen and (max-width: 19.9rem) {
+  html {
+    line-height: 1.4;
+    font-size: 1rem; } }
+/*
+Variables
+================================
+*/
+/*
+Helpers classes
+================================
+*/
+.ta-r {
+  text-align: right; }
+
+.ta-l {
+  text-align: left; }
+
+.ta-c {
+  text-align: center; }
+
+.fs-25 {
+  font-size: 1.25rem; }
+
+.fs-50 {
+  font-size: 1.50rem; }
+
+.fs-75 {
+  font-size: 1.75rem; }
+
+.fw-b {
+  font-weight: bold; }
+
+/*
+Navigation
+================================
+*/
+.logo {
+  font-size: 1.5rem; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 0px 2px 11px -3px rgba(10, 10, 10, 0.5);
+  -moz-box-shadow: 0px 2px 11px -3px rgba(10, 10, 10, 0.5);
+  box-shadow: 0px 2px 11px -3px rgba(10, 10, 10, 0.5); }
+
+.nav {
+  list-style: none;
+  cursor: pointer; }
+
+.nav__item {
+  color: #454545;
+  display: inline-block;
+  margin-left: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .nav__item:hover {
+    transition: all 0.2s ease-in;
+    color: #D34646; }
+
+.nav__item--secondary {
+  padding-left: 2rem; }
+
+.active {
+  transition: all 0.2s ease-in;
+  color: #D34646; }
+
+.nav--secondary {
+  font-weight: 400;
+  color: #454545; }
+
+@media only screen and (min-width: 1039px) {
+  .nav {
+    font-size: 1rem; } }
+@media only screen and (max-width: 850px) {
+  .logo {
+    margin-right: 2rem; }
+
+  .nav__item {
+    margin-left: 0.25rem;
+    font-size: 0.8rem; } }
+@media only screen and (max-width: 575px) {
+  .logo {
+    padding-bottom: 1rem;
+    margin: 0 auto; }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem; }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+
+  .nav__item {
+    margin-left: 0px;
+    margin-bottom: 0.25rem; } }
+/*
+Big cover img
+================================
+*/
+.cover {
+  background: url("../img/cover.jpg") no-repeat;
+  width: 100%;
+  height: 400px;
+  background-size: 100%;
+  position: absolute;
+  z-index: -1;
+  text-align: center; }
+  .cover h1 {
+    font-size: 5rem; }
+
+.statement {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #929292; }
+
+@media only screen and (min-width: 20rem) and (max-width: 40rem) {
+  .cover {
+    background: none;
+    padding-top: 1rem; }
+    .cover h1 {
+      font-size: 1.2rem;
+      color: black; }
+    .cover p {
+      font-size: 1rem; } }
+/*
+Button
+================================
+*/
+/*
+Variables
+================================
+*/
+.btn {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  color: white;
+  font-weight: 900;
+  background: #CC2B2B;
+  padding: .50rem;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 3.2rem; }
+  .btn:hover {
+    background: white;
+    color: #CC2B2B;
+    border: 1px solid #CC2B2B; }
+
+@media only screen and (min-width: 20rem) and (max-width: 40rem) {
+  .btn {
+    font-size: 0.8rem;
+    width: 100%;
+    pointer-events: none; } }
+/*
+Social related
+================================
+*/
+.row__social {
+  padding-bottom: 2rem;
+  cursor: pointer; }
+  .row__social .fa-brands {
+    text-align: center;
+    color: white;
+    background: #666666;
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 1rem; }
+  .row__social a {
+    padding-left: 1rem; }
+
+* {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=main.css.map */

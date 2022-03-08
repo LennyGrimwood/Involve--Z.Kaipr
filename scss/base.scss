@@ -1,0 +1,15 @@
+
+
+	// PARTIALS IMPORT //
+
+		@import 'document/fonts';		// TYPOGRAFIE
+		@import 'document/layout';		// DOKUMENT
+		@import 'core/variables';		// PROMENNE
+		@import 'core/helper';			// PROMENNE
+		@import 'component/nav';		// NAVIGACE
+		@import 'component/cover';		// COVER IMG
+		@import 'component/button';		// BUTTONS
+		@import 'component/social';		// SOCIAL ROW
+
+* { box-sizing: border-box };
+
